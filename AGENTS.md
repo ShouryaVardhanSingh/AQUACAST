@@ -28,3 +28,7 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+- The whole AQUACAST journey lives at `/` as a stage machine in src/routes/index.tsx with screens in src/components/aquacast — keeps cinematic transitions between screens seamless.
+- Maps are rendered as SVG with d3-geo (world-atlas + simplified src/data/india.json), not Leaflet — SSR-safe and fully stylable.
+- All flood figures and SATO replies are illustrative demo data in src/lib/flood.ts; keep them labeled as such until a backend exists.
